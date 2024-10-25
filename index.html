@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gereciador de mesada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bolsa-de-dinheiro.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            GERECIADOR DE ME$ADA
+        </h1>
+        <div class="form-container">
+            <div class="forms">
+                <form id="wallet-form">
+                    <label for="wallet">
+                        Digite o saldo atual
+                    </label>
+                    <input type="number" id="wallet" required>
+                    <button type="submit">$ALVAR $ALDO</button>
+                </form>
+                <form id="allowance-form">
+                    <label for="allowance">
+                        Digite o valor mesal da mesada
+                    </label>
+                    <input type="number" id="" required>
+                    <button type="submit">$ALVAR mesada</button>
+                </form>
+                <form id="product-form">
+                    <label for="product-name">
+                        Nome do produto:
+                    </label>
+                    <input type="text" id="product-name" required>
+                    <label for="product-price">Preço do produto:</label>
+                    <input type="number" id="product-price">
+                    <button type="submit">Adicionar produto</button>
+                </form>
+                <form id="estimate-form">
+                    <label for="months">quantos meses você quer juntar?</label>
+                    <input type="number" id="months" required>
+                    <button type="submit">Estimar saldo</button>
+                </form>
+            </div>
+            <div class="products">
+                <div id="estimate-result">
+                    <h2>
+                        Valor atual da Carteira R$: <span id="current-wallet-value">0.000</span>
+                    </h2>
+                    <h2>
+                        Valor estimado da carteira R$: <span id="estimated-wallet-value">0.000</span>
+                    </h2>
+                </div>
+                <h2>
+                    lista de produto$
+                </h2>
+                <ul id="product-list">
+                </ul>
+            </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>
